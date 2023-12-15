@@ -43,4 +43,5 @@ my_data_row = my_cur.fetchone()
 streamlit.text("Hello from Snowflake:")
 streamlit.text(my_data_row)
 
-fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index)
+fruit_add = streamlit.text_input('What fruit would you like to add?')
+streamlit.write('Thank you for adding ', fruit_add)
